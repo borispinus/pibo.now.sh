@@ -15,7 +15,9 @@
     "node": true
   },
   "rules": {
-    "react/jsx-filename-extension": 0,
-    "no-shadow": 0
+    "react/jsx-filename-extension": "off",
+    "no-shadow": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-newline": "off"
   }
 }

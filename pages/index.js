@@ -1,5 +1,7 @@
 import React from 'react';
 
-const Home = () => <div className="container">Boro</div>;
+import { Index as IndexPage } from '../index/Index';
 
-export default Home;
+const Index = () => <IndexPage />;
+
+export default Index;

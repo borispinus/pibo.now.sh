@@ -1,0 +1,26 @@
+.Links {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  a,
+  a:visited,
+  a:focus {
+    text-decoration: none;
+    color: #4169e1;
+  }
+  a:hover {
+    color: #0000cd;
+  }
+  .link {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .icon {
+    color: #000080;
+    margin-right: 10px;
+  }
+}
