@@ -31,8 +31,8 @@ const links = [
 const Links = ({ onHover }) => (
   <ul className={style.Links}>
     {links.map((link) => (
-      <li key={link.name} className={style.link} onMouseEnter={onHover}>
-        <a href={link.href}>
+      <li key={link.name} className={style.listItem} onMouseEnter={onHover}>
+        <a href={link.href} className={style.link}>
           <FontAwesomeIcon className={style.icon} icon={link.icon} />
           {link.text}
         </a>

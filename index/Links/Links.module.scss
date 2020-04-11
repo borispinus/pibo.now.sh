@@ -1,23 +1,20 @@
 .Links {
   margin: 0;
   padding: 0;
-  li {
+  .listItem {
+    font-size: 24px;
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
   }
-  a,
-  a:visited,
-  a:focus {
+  .link,
+  .link:visited,
+  .link:focus {
     text-decoration: none;
     color: #4169e1;
   }
-  a:hover {
+  .link:hover {
     color: #0000cd;
-  }
-  .link {
-    font-size: 24px;
-    margin-bottom: 10px;
   }
   .icon {
     color: #000080;

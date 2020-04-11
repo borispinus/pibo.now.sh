@@ -5,7 +5,7 @@ import styles from './Avatar.module.scss';
 
 const Avatar = ({ index }) => (
   <div className={styles.Avatar}>
-    <img src={`avatar/${index}.png`} alt="boris pinus" />
+    <img className={styles.image} src={`avatar/${index}.png`} alt="boris pinus" />
   </div>
 );
 
