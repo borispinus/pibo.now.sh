@@ -6,8 +6,9 @@ import { Person } from '../Person/Person';
 const Population = ({ data }) => {
   return (
     <g>
-      {data.map(({ x, y, infected }) => (
-        <Person key={`${x}-${y}`} x={x} y={y} infected={infected} />
+      {data.map((person) => (
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        <Person {...person} />
       ))}
     </g>
   );
@@ -18,7 +19,9 @@ Population.propTypes = {
     PropTypes.shape({
       x: PropTypes.number.isRequired,
       y: PropTypes.number.isRequired,
-      infected: PropTypes.bool.isRequired,
+      dead: PropTypes.bool.isRequired,
+      recovered: PropTypes.bool.isRequired,
+      infected: PropTypes.number,
     })
   ).isRequired,
 };
