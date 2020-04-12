@@ -44,7 +44,7 @@ const usePopulation = (params) => {
   };
 
   useEffect(() => {
-    if (!simulating) return null;
+    if (!simulating) return () => {};
     const timer = d3.timer((elapsedTime) => {
       iteratePopulation(elapsedTime);
       if (!simulating) timer.stop();
