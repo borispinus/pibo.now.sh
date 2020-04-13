@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/fontawesome-free-regular';
 import { faGithub, faTelegram } from '@fortawesome/free-brands-svg-icons';
@@ -33,7 +32,7 @@ const Links = ({ onHover }) => (
     {links.map((link) => (
       <li key={link.name} className={style.listItem} onMouseEnter={onHover}>
         <a href={link.href} className={style.link}>
-          <FontAwesomeIcon className={style.icon} icon={link.icon} />
+          <FontAwesomeIcon className={style.icon} icon={link.icon} size="1x" />
           {link.text}
         </a>
       </li>
